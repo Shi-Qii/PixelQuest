@@ -45,6 +45,23 @@ The BOSS stage requires all members to reach Stage 5, then everyone contributes 
 
 ---
 
+## TOEIC Vocabulary System
+
+Built-in TOEIC essential word bank, themed by stage:
+
+| Stage | Vocabulary Theme | Words |
+|---|---|---|
+| Stage 1 | Daily life, basic verbs | 200 |
+| Stage 2 | IT, office & technology | 200 |
+| Stage 3 | Business process, finance | 200 |
+| Stage 4 | Travel, transport, descriptive | 200 |
+| Stage 5 | Strategy, decisions, advanced business | 200 |
+| BOSS | Mixed advanced vocabulary | 200 |
+
+Learn the vocabulary that matches the stage you're playing — LeetCode and TOEIC prep at the same time.
+
+---
+
 ## Claude as Your Guide
 
 Claude acts as the **NPC mentor** for every stage. The guidance style changes as you progress:
