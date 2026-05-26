@@ -1,0 +1,94 @@
+{
+  "stages": [
+    {
+      "id": "stage1",
+      "name": "Array Plains",
+      "theme": "Array / Two Pointer",
+      "vocab_theme": "數量、基礎描述詞",
+      "pieces": { "start": 0, "end": 9, "count": 10 },
+      "unlock_requirement": {
+        "leetcode": 5,
+        "vocab": 10,
+        "total_tasks": 15
+      },
+      "sample_problems": ["TwoSum", "BestTimeToBuyAndSellStock", "ContainsDuplicate", "MaximumSubarray", "MoveZeroes"],
+      "hint_style": "guided",
+      "unlocks_next": "stage2"
+    },
+    {
+      "id": "stage2",
+      "name": "String Caverns",
+      "theme": "String / HashMap",
+      "vocab_theme": "IT 技術詞彙",
+      "pieces": { "start": 10, "end": 24, "count": 15 },
+      "unlock_requirement": {
+        "leetcode": 8,
+        "vocab": 15,
+        "total_tasks": 23
+      },
+      "sample_problems": ["ValidAnagram", "LongestSubstringWithoutRepeating", "GroupAnagrams", "ValidParentheses", "LongestCommonPrefix"],
+      "hint_style": "guided",
+      "unlocks_next": "stage3"
+    },
+    {
+      "id": "stage3",
+      "name": "LinkedList Labyrinth",
+      "theme": "Linked List / Stack",
+      "vocab_theme": "商業流程詞",
+      "pieces": { "start": 25, "end": 39, "count": 15 },
+      "unlock_requirement": {
+        "leetcode": 8,
+        "vocab": 15,
+        "total_tasks": 23
+      },
+      "sample_problems": ["ReverseLinkedList", "MergeTwoSortedLists", "LinkedListCycle", "RemoveNthNodeFromEndOfList", "PalindromeLinkedList"],
+      "hint_style": "hint_only",
+      "unlocks_next": "stage4"
+    },
+    {
+      "id": "stage4",
+      "name": "Tree Forest",
+      "theme": "Binary Tree / DFS / BFS",
+      "vocab_theme": "自然、邏輯描述詞",
+      "pieces": { "start": 40, "end": 59, "count": 20 },
+      "unlock_requirement": {
+        "leetcode": 10,
+        "vocab": 20,
+        "total_tasks": 30
+      },
+      "sample_problems": ["MaximumDepthOfBinaryTree", "InvertBinaryTree", "BinaryTreeLevelOrderTraversal", "ValidateBinarySearchTree", "LowestCommonAncestor"],
+      "hint_style": "hint_only",
+      "unlocks_next": "stage5"
+    },
+    {
+      "id": "stage5",
+      "name": "DP Desert",
+      "theme": "Dynamic Programming",
+      "vocab_theme": "策略、決策詞",
+      "pieces": { "start": 60, "end": 79, "count": 20 },
+      "unlock_requirement": {
+        "leetcode": 10,
+        "vocab": 20,
+        "total_tasks": 30
+      },
+      "sample_problems": ["ClimbingStairs", "CoinChange", "LongestIncreasingSubsequence", "HouseRobber", "UniquePaths"],
+      "hint_style": "confirm_only",
+      "unlocks_next": "boss"
+    },
+    {
+      "id": "boss",
+      "name": "Full Combo ★",
+      "theme": "Mixed Hard",
+      "vocab_theme": "全類混測",
+      "pieces": { "start": 80, "end": 99, "count": 20 },
+      "unlock_requirement": {
+        "leetcode": 15,
+        "vocab": 25,
+        "total_tasks": 40,
+        "party_requirement": "all_members_stage5_cleared"
+      },
+      "hint_style": "none",
+      "unlocks_next": null
+    }
+  ]
+}

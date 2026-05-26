@@ -1,0 +1,12 @@
+{
+  "party_name": "",
+  "max_members": 4,
+  "members": ["shiqi"],
+  "boss_unlocked": false,
+  "boss_progress": {
+    "leetcode_done": 0,
+    "vocab_done": 0,
+    "pieces_unlocked": []
+  },
+  "boss_picture": "gallery/boss_original.png"
+}

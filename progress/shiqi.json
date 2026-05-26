@@ -1,0 +1,22 @@
+{
+  "player": "shiqi",
+  "current_stage": "stage1",
+  "unlocked_pieces": [],
+  "total_pieces": 100,
+  "stages": {
+    "stage1": { "status": "in_progress", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
+    "stage2": { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
+    "stage3": { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
+    "stage4": { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
+    "stage5": { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
+    "boss":   { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false }
+  },
+  "weak_vocab": [],
+  "activity_log": [],
+  "stats": {
+    "total_leetcode": 0,
+    "total_vocab": 0,
+    "streak_days": 0,
+    "last_active": null
+  }
+}

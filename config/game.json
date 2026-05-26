@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "created_by": "shiqi",
+  "mode": "solo",
+  "max_party": 4,
+  "language": "java",
+  "grid_size": 10,
+  "total_pieces": 100,
+  "hint_policy": {
+    "stage1": "guided",
+    "stage2": "guided",
+    "stage3": "hint_only",
+    "stage4": "hint_only",
+    "stage5": "confirm_only",
+    "boss": "none"
+  }
+}
