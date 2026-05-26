@@ -5,6 +5,20 @@
 A gamified learning system with **three parallel tracks**: LeetCode algorithms (Java), TOEIC vocabulary, and Claude AI tools.
 Every task you complete reveals a piece of your chosen image. Clear all 6 stages to unlock the full picture.
 
+```
+  YOUR PROGRESS
+  ┌──────────────────────────────────────────────┐
+  │  Start          In Progress       Complete   │
+  │                                              │
+  │  ██████████     ██████████     ██████████   │
+  │  ██████████  →  ██████░░░░  →  ██████████   │
+  │  ██████████     ████░░░░░░     ██████████   │
+  │  ██████████     ██████████     ██████████   │
+  │  (all black)    (revealing)    (full image) │
+  └──────────────────────────────────────────────┘
+  Each task you finish peels away one more black tile.
+```
+
 ---
 
 ## How It Works
@@ -21,17 +35,27 @@ Complete tasks across all three tracks → unlock pieces → reveal your image.
 
 ---
 
+## Unlock Logic
+
+- **Instant unlock:** Every task you complete immediately unlocks the corresponding proportion of tiles — no need to wait until the end of a stage.
+- **Progress is always saved:** If you stop mid-session and come back the next day, your progress is 100% preserved in `progress/shiqi.json`.
+- **Tile unlock order:** Left to right, top to bottom, following the Stage sequence (Stage 1 tiles unlock before Stage 2, and so on).
+
+---
+
 ## Three Learning Tracks
 
-Each stage contains three independent sub-tracks. All three must be completed to clear the stage.
+Each stage contains three independent sub-tracks. **LeetCode + TOEIC are required to clear a stage.** The AI Tools track is a bonus — it never blocks your progress.
 
-| Track | Content | Unlocks |
-|---|---|---|
-| ⚔ Algorithm | LeetCode problems in Java | pieces |
-| 📖 TOEIC | Vocabulary matching the stage theme | pieces |
-| 🤖 AI Tools | Claude Code features (hands-on tasks) | bonus pieces |
+| Track | Content | Unlocks | Required to clear? |
+|---|---|---|---|
+| ⚔ Algorithm | LeetCode problems in Java | pieces | Yes |
+| 📖 TOEIC | Vocabulary matching the stage theme | pieces | Yes |
+| 🤖 AI Tools | Claude Code features (hands-on tasks) | **bonus pieces** | No — bonus only |
 
-Progress within each track is independent — do them in any order.
+- Finish LeetCode + TOEIC → stage cleared, advance to the next stage.
+- AI Tools task can be completed at any time (before or after clearing the stage) — bonus pieces are always awarded when you finish it.
+- Progress within each track is independent — do them in any order.
 
 ---
 
@@ -97,6 +121,17 @@ The level of help decreases as you progress:
 | `/vocab add <word>` | Add a word to the current stage word list |
 | `/vocab quiz` | Practice current stage vocabulary (weak words first) |
 | `/vocab list` | List all words sorted by familiarity |
+
+**Quiz format — 5 questions per session, three types rotating:**
+
+| Type | Format | Example |
+|---|---|---|
+| A | See Chinese → spell the English word (fill-in) | "充足的、豐富的" → `___` |
+| B | See English → pick the Chinese meaning (4-choice) | `abundant` → (a)(b)(c)(d) |
+| C | Fill in the blank in a sentence | "We have an ___ supply of water." |
+
+- Correct: familiarity +1 (max 3, meaning "mastered")
+- Wrong: logged to `mistakes.md`, correct answer + example sentence shown immediately
 
 ### Progress
 | Command | Action |
@@ -201,12 +236,26 @@ PixelQuest/
 
 ## Joining as a Teammate
 
-1. Fork this repo
-2. Run `python3 scripts/setup.py <your_image>` with your own image
-3. Run `python3 scripts/test_image.py` to verify
-4. Your progress is tracked in `progress/<your_github>.json`
-5. Ask the party leader to run `/party invite <your_github>`
+PixelQuest uses a **Collaborator model** — everyone pushes to the same repo. No forks needed.
+
+**For the party leader:**
+1. Go to GitHub repo → Settings → Collaborators → Add your teammate's GitHub account (grant Write access)
+2. Run `/party invite <teammate_github>` — this creates `progress/<teammate_github>.json` locally
+
+**For each teammate:**
+1. Accept the GitHub Collaborator invitation
+2. Clone the same repo: `git clone <repo_url>`
+3. Run `python3 scripts/setup.py <your_image>` to set up your image
+4. Run `python3 scripts/test_image.py` to verify
+5. Push only your own file: `git push` — your progress lives in `progress/<your_github>.json`
+
+**How `/party status` works:**
+- It automatically reads all `progress/*.json` files in the repo and generates a combined report.
+- No manual `party.json` updates needed — just push your own progress file.
 
 ---
 
-Built with [Claude Code](https://claude.ai/code)
+> **Built with [Claude Code](https://claude.ai/code)** — and designed to teach you how to use it.
+>
+> Every stage of PixelQuest is a hands-on Claude Code lesson.
+> The system you are playing inside is the curriculum.

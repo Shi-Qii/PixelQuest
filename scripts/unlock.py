@@ -52,6 +52,19 @@ def mark_done(task_type, task_name, player="shiqi"):
             stage["leetcode_done"] += 1
     elif task_type == "vocab":
         stage["vocab_done"] += 1
+    elif task_type == "claude":
+        # Claude track is non-blocking: completion grants bonus pieces
+        # but does NOT gate stage clear (leetcode + vocab are sufficient)
+        if not stage.get("claude_done"):
+            stage["claude_done"] = True
+            bonus_start = cfg["start"] + cfg["count"]  # bonus pieces follow stage's range
+            bonus_pieces = list(range(bonus_start - cfg.get("claude_bonus", 0), bonus_start))
+            all_unlocked_bonus = set(progress["unlocked_pieces"])
+            all_unlocked_bonus.update(bonus_pieces)
+            progress["unlocked_pieces"] = sorted(list(all_unlocked_bonus))
+            print(f"✓ [{stage_id}] claude task complete — bonus pieces unlocked!")
+        else:
+            print(f"✓ [{stage_id}] claude task already completed (bonus already granted)")
 
     new_pieces = calc_pieces(stage_id, stage["leetcode_done"], stage["vocab_done"], cfg)
     all_unlocked = set(progress["unlocked_pieces"])
@@ -68,9 +81,11 @@ def mark_done(task_type, task_name, player="shiqi"):
         "stage": stage_id,
         "pieces_after": total
     })
-    progress["stats"]["total_" + ("leetcode" if task_type == "leetcode" else "vocab")] += 1
+    stat_key = "total_leetcode" if task_type == "leetcode" else ("total_vocab" if task_type == "vocab" else "total_claude")
+    progress["stats"][stat_key] += 1
     progress["stats"]["last_active"] = str(date.today())
 
+    # Stage clear requires only leetcode + vocab (claude track is non-blocking bonus)
     stage_cleared = (
         stage["leetcode_done"] >= cfg["lc"] and
         stage["vocab_done"]    >= cfg["vocab"] and

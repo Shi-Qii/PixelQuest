@@ -26,6 +26,7 @@
           "theme": "CLAUDE.md + Skills",
           "required": 1,
           "pieces": 2,
+          "blocking": false,
           "guide": "stages/stage1-array/claude/guide.md",
           "task": "建立一個自訂 /mystats 指令"
         }
@@ -57,6 +58,7 @@
           "theme": "Memory",
           "required": 1,
           "pieces": 3,
+          "blocking": false,
           "guide": "stages/stage2-string/claude/guide.md",
           "task": "讓 Claude 記住你的三個弱點單字，下次對話驗證它還記得"
         }
@@ -88,6 +90,7 @@
           "theme": "Hooks + Settings.json",
           "required": 1,
           "pieces": 3,
+          "blocking": false,
           "guide": "stages/stage3-linkedlist/claude/guide.md",
           "task": "設定一個 PostToolUse Hook，讓進度圖在每次 /done 後自動更新"
         }
@@ -119,6 +122,7 @@
           "theme": "Plan Mode + Sub-agents",
           "required": 1,
           "pieces": 4,
+          "blocking": false,
           "guide": "stages/stage4-tree/claude/guide.md",
           "task": "用 Plan Mode 設計一個新功能，再用 Sub-agent 執行其中一個步驟"
         }
@@ -150,6 +154,7 @@
           "theme": "MCP",
           "required": 1,
           "pieces": 4,
+          "blocking": false,
           "guide": "stages/stage5-dp/claude/guide.md",
           "task": "串接一個 MCP 工具（字典 API 或 GitHub API），整合進 /vocab add"
         }
@@ -182,6 +187,7 @@
           "theme": "Schedule + 自建功能",
           "required": 1,
           "pieces": 4,
+          "blocking": false,
           "guide": "stages/boss/claude/guide.md",
           "task": "設定每日自動學習排程，並為 PixelQuest 加入一個你自己設計的新功能"
         }
