@@ -31,7 +31,7 @@
 ## 解鎖邏輯
 
 - **即時解鎖：** 每完成一個任務，系統馬上按比例解鎖對應圖塊，不用等整關結束。
-- **進度完整保留：** 中途停掉、隔天繼續，進度 100% 保留在 `progress/shiqi.json`，不會遺失。
+- **進度完整保留：** 中途停掉、隔天繼續，進度 100% 保留在 `progress/<玩家名>.json`，不會遺失。
 - **圖塊解鎖順序：** 由左到右、由上到下，依 Stage 順序排列（Stage 1 的圖塊先於 Stage 2，以此類推）。
 
 ---
@@ -194,9 +194,7 @@ PixelQuest/
 │   └── stages.json                # 六個關卡（每關含三條軌道）
 ├── progress/
 │   ├── <玩家名>.json              # 個人進度（三條軌道分別追蹤）
-│   └── party.json                 # 隊員名單 + BOSS 共同進度
-│                                  # （/party status 是讀所有 <玩家名>.json 彙整，
-│                                  #   party.json 只存 BOSS 共同解鎖狀態）
+│   └── party.json                 # BOSS 共同進度（由 /party status 自動維護，勿手動編輯）
 ├── stages/
 │   └── stage1-array/
 │       ├── leetcode/              # Java 解題檔案

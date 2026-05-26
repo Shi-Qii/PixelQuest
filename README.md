@@ -31,7 +31,7 @@ Complete tasks across all three tracks → unlock pieces → reveal your image.
 ## Unlock Logic
 
 - **Instant unlock:** Every task you complete immediately unlocks the corresponding proportion of tiles — no need to wait until the end of a stage.
-- **Progress is always saved:** If you stop mid-session and come back the next day, your progress is 100% preserved in `progress/shiqi.json`.
+- **Progress is always saved:** If you stop mid-session and come back the next day, your progress is 100% preserved in `progress/<player>.json`.
 - **Tile unlock order:** Left to right, top to bottom, following the Stage sequence (Stage 1 tiles unlock before Stage 2, and so on).
 
 ---
@@ -195,9 +195,7 @@ PixelQuest/
 │   └── stages.json                # All 6 stages with 3 tracks each
 ├── progress/
 │   ├── <player>.json              # Per-player progress (all 3 tracks)
-│   └── party.json                 # Party member list + shared BOSS progress
-│                                  # (/party status reads all <player>.json files,
-│                                  #  party.json only stores BOSS shared state)
+│   └── party.json                 # BOSS shared progress (auto-maintained by /party status, do not edit manually)
 ├── stages/
 │   └── stage1-array/
 │       ├── leetcode/              # Java solutions
