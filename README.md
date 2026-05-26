@@ -1,8 +1,8 @@
 # PixelQuest: The Learning Arena
 
-> Unlock your picture. One algorithm at a time.
+> Unlock your picture. One algorithm, one word, one tool at a time.
 
-A gamified learning system combining **LeetCode (Java)** and **TOEIC vocabulary** practice.
+A gamified learning system with **three parallel tracks**: LeetCode algorithms (Java), TOEIC vocabulary, and Claude AI tools.
 Every task you complete reveals a piece of your chosen image. Clear all 6 stages to unlock the full picture.
 
 ---
@@ -10,7 +10,7 @@ Every task you complete reveals a piece of your chosen image. Clear all 6 stages
 ## How It Works
 
 Upload any image. It gets cut into 100 pieces.
-Complete learning tasks → unlock pieces → reveal your image.
+Complete tasks across all three tracks → unlock pieces → reveal your image.
 
 ```
 ░░░░░░░░░░    ████░░░░░░    ██████████
@@ -21,18 +21,39 @@ Complete learning tasks → unlock pieces → reveal your image.
 
 ---
 
-## Stages
+## Three Learning Tracks
 
-| # | Stage | Type | Pieces |
-|---|---|---|---|
-| 1 | Array Plains | Array / Two Pointer | 10 |
-| 2 | String Caverns | String / HashMap | 15 |
-| 3 | LinkedList Labyrinth | Linked List / Stack | 15 |
-| 4 | Tree Forest | Binary Tree / DFS / BFS | 20 |
-| 5 | DP Desert | Dynamic Programming | 20 |
-| ★ | BOSS: Full Combo | Mixed Hard | 20 |
+Each stage contains three independent sub-tracks. All three must be completed to clear the stage.
 
-Each stage has a fixed theme but **you choose the problems and vocabulary** within it.
+| Track | Content | Unlocks |
+|---|---|---|
+| ⚔ Algorithm | LeetCode problems in Java | pieces |
+| 📖 TOEIC | Vocabulary matching the stage theme | pieces |
+| 🤖 AI Tools | Claude Code features (hands-on tasks) | bonus pieces |
+
+Progress within each track is independent — do them in any order.
+
+---
+
+## Stage Structure
+
+| # | Stage | Algorithm | TOEIC Theme | AI Tools Topic | Pieces |
+|---|---|---|---|---|---|
+| 1 | Array Plains | Array / Two Pointer | Daily life, basic verbs | CLAUDE.md + Skills | 10 |
+| 2 | String Caverns | String / HashMap | IT, office vocabulary | Memory | 15 |
+| 3 | LinkedList Labyrinth | Linked List / Stack | Business, finance | Hooks + Settings | 15 |
+| 4 | Tree Forest | Binary Tree / DFS / BFS | Travel, transport | Plan Mode + Agents | 20 |
+| 5 | DP Desert | Dynamic Programming | Strategy, advanced business | MCP | 20 |
+| ★ | BOSS: Full Combo | Mixed Hard | All categories mixed | Schedule + Build | 20 |
+
+### Piece breakdown per stage (example: Stage 1 — 10 pieces)
+```
+⚔  Algorithm   5 problems  →  4 pieces
+📖 TOEIC       10 words    →  4 pieces
+🤖 AI Tools    1 task      →  2 pieces
+```
+
+Theme is fixed. **Problems, words, and pace are your choice.**
 
 ---
 
@@ -41,30 +62,15 @@ Each stage has a fixed theme but **you choose the problems and vocabulary** with
 **Solo** — Your image, your pace, your journey.
 
 **Party (2–4 players)** — Each player has their own image for Stages 1–5.
-The BOSS stage requires all members to reach Stage 5, then everyone contributes to a shared Party image.
-
----
-
-## TOEIC Vocabulary System
-
-Built-in TOEIC essential word bank, themed by stage:
-
-| Stage | Vocabulary Theme | Words |
-|---|---|---|
-| Stage 1 | Daily life, basic verbs | 200 |
-| Stage 2 | IT, office & technology | 200 |
-| Stage 3 | Business process, finance | 200 |
-| Stage 4 | Travel, transport, descriptive | 200 |
-| Stage 5 | Strategy, decisions, advanced business | 200 |
-| BOSS | Mixed advanced vocabulary | 200 |
-
-Learn the vocabulary that matches the stage you're playing — LeetCode and TOEIC prep at the same time.
+The BOSS stage requires all members to reach Stage 5 first.
+Then everyone contributes to a **shared Party image** to clear it together.
 
 ---
 
 ## Claude as Your Guide
 
-Claude acts as the **NPC mentor** for every stage. The guidance style changes as you progress:
+Claude acts as the **NPC mentor** — it never gives direct answers, only guidance.
+The level of help decreases as you progress:
 
 | Stage | Claude's Role |
 |---|---|
@@ -77,16 +83,34 @@ Claude acts as the **NPC mentor** for every stage. The guidance style changes as
 
 ## Commands
 
+### Learning
 | Command | Action |
 |---|---|
-| `/map` | World map + all players' progress |
-| `/done leetcode <problem>` | Mark a LeetCode problem complete |
-| `/vocab add <word>` | Add a word to the current stage |
-| `/vocab quiz` | Practice current stage vocabulary |
-| `/hint` | Ask Claude for a hint |
+| `/done leetcode <problem>` | Mark a LeetCode problem complete + unlock pieces |
+| `/done vocab <word>` | Mark a vocab word as learned + unlock pieces |
+| `/done claude <topic>` | Mark an AI Tools task complete + unlock bonus pieces |
+| `/hint` | Ask Claude for a hint (level-gated) |
+
+### Vocabulary
+| Command | Action |
+|---|---|
+| `/vocab add <word>` | Add a word to the current stage word list |
+| `/vocab quiz` | Practice current stage vocabulary (weak words first) |
+| `/vocab list` | List all words sorted by familiarity |
+
+### Progress
+| Command | Action |
+|---|---|
+| `/map` | World map with all tracks' progress |
 | `/progress` | Regenerate and view your picture progress |
+| `/test-image` | Verify image integrity + generate 100% preview |
+
+### Party
+| Command | Action |
+|---|---|
 | `/party invite <github>` | Invite a teammate |
-| `/party status` | View all members' progress |
+| `/party status` | View all members' progress across all tracks |
+| `/party boss` | Check if BOSS is unlocked for the party |
 
 ---
 
@@ -94,19 +118,42 @@ Claude acts as the **NPC mentor** for every stage. The guidance style changes as
 
 **1. Install dependencies**
 ```bash
-pip install pillow
+pip3 install pillow
 ```
 
-**2. Set up your image**
+**2. Upload and cut your image**
 ```bash
-python scripts/setup.py path/to/your/image.png
+python3 scripts/setup.py path/to/your/image.png
 ```
 
-**3. Initialize git and start playing**
+**3. Test your image (recommended)**
 ```bash
-git init
+python3 scripts/test_image.py
 ```
-Then open Claude Code in this directory and run `/map`.
+This generates a 100% preview (`gallery/<player>_preview_100.png`) so you can confirm the image reassembles correctly before you start.
+
+**4. Open Claude Code and start**
+```bash
+# In this directory:
+/map
+```
+
+---
+
+## AI Tools Learning Path
+
+Each stage teaches one Claude Code concept through a hands-on task:
+
+| Stage | Topic | Task |
+|---|---|---|
+| 1 | CLAUDE.md + Skills | Build a custom `/mystats` command |
+| 2 | Memory | Make Claude remember your weak points across sessions |
+| 3 | Hooks + Settings | Auto-update progress image after every `/done` |
+| 4 | Plan Mode + Agents | Design and delegate a new feature |
+| 5 | MCP | Connect a dictionary API to `/vocab add` |
+| BOSS | Schedule + Build | Set up daily reminders + ship your own feature |
+
+Guides are in `stages/<stage>/claude/guide.md`.
 
 ---
 
@@ -114,26 +161,40 @@ Then open Claude Code in this directory and run `/map`.
 
 ```
 PixelQuest/
-├── CLAUDE.md              # Claude's role and game rules
+├── CLAUDE.md                      # Claude's role, hint policy, game rules
 ├── config/
-│   ├── game.json          # Mode, party size, hint policy
-│   └── stages.json        # All 6 stage definitions
+│   ├── game.json                  # Mode, party size, hint policy
+│   └── stages.json                # All 6 stages with 3 tracks each
 ├── progress/
-│   ├── <player>.json      # Per-player progress
-│   └── party.json         # Shared party state
+│   ├── <player>.json              # Per-player progress (all 3 tracks)
+│   └── party.json                 # Shared party + BOSS state
 ├── stages/
 │   └── stage1-array/
-│       ├── leetcode/      # Your Java solutions
-│       └── vocab/         # Word list + mistake log
+│       ├── leetcode/              # Java solutions
+│       ├── vocab/
+│       │   ├── wordlist.md        # Your personal word list
+│       │   ├── mistakes.md        # Auto-logged wrong answers
+│       │   └── toeic_bank.md      # Built-in TOEIC word bank (~200 words)
+│       └── claude/
+│           └── guide.md           # AI Tools learning guide for this stage
 ├── gallery/
-│   ├── <player>_original.png
-│   ├── pieces/            # 100 image pieces
-│   └── <player>_current.png
+│   ├── <player>_original.png      # Your uploaded image
+│   ├── <player>_preview_100.png   # 100% complete preview (test only)
+│   ├── pieces/<player>/           # 100 image pieces (00–99)
+│   └── <player>_current.png       # Live progress image (auto-generated)
 ├── scripts/
-│   ├── setup.py           # Cut image into 100 pieces
-│   ├── generate.py        # Render current progress image
-│   └── unlock.py          # Mark tasks done + auto-commit
-└── .claude/commands/      # Custom slash commands
+│   ├── setup.py                   # Cut image into 100 pieces
+│   ├── generate.py                # Render current progress image
+│   ├── unlock.py                  # Mark tasks done + auto-commit
+│   └── test_image.py              # Validate image + generate 100% preview
+└── .claude/commands/              # All custom slash commands
+    ├── map.md
+    ├── done.md
+    ├── vocab.md
+    ├── hint.md
+    ├── progress.md
+    ├── party.md
+    └── test-image.md
 ```
 
 ---
@@ -141,9 +202,10 @@ PixelQuest/
 ## Joining as a Teammate
 
 1. Fork this repo
-2. Run `python scripts/setup.py <your_image>` with your own image
-3. Your progress is tracked in `progress/<your_github>.json`
-4. Ask the party leader to run `/party invite <your_github>`
+2. Run `python3 scripts/setup.py <your_image>` with your own image
+3. Run `python3 scripts/test_image.py` to verify
+4. Your progress is tracked in `progress/<your_github>.json`
+5. Ask the party leader to run `/party invite <your_github>`
 
 ---
 

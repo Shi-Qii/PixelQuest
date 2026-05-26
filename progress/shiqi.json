@@ -4,18 +4,67 @@
   "unlocked_pieces": [],
   "total_pieces": 100,
   "stages": {
-    "stage1": { "status": "in_progress", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
-    "stage2": { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
-    "stage3": { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
-    "stage4": { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
-    "stage5": { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false },
-    "boss":   { "status": "locked", "leetcode_done": 0, "vocab_done": 0, "cleared": false }
+    "stage1": {
+      "status": "in_progress",
+      "cleared": false,
+      "tracks": {
+        "leetcode": { "done": 0, "required": 5,  "pieces_unlocked": 0 },
+        "vocab":    { "done": 0, "required": 10, "pieces_unlocked": 0 },
+        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+      }
+    },
+    "stage2": {
+      "status": "locked",
+      "cleared": false,
+      "tracks": {
+        "leetcode": { "done": 0, "required": 8,  "pieces_unlocked": 0 },
+        "vocab":    { "done": 0, "required": 15, "pieces_unlocked": 0 },
+        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+      }
+    },
+    "stage3": {
+      "status": "locked",
+      "cleared": false,
+      "tracks": {
+        "leetcode": { "done": 0, "required": 8,  "pieces_unlocked": 0 },
+        "vocab":    { "done": 0, "required": 15, "pieces_unlocked": 0 },
+        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+      }
+    },
+    "stage4": {
+      "status": "locked",
+      "cleared": false,
+      "tracks": {
+        "leetcode": { "done": 0, "required": 10, "pieces_unlocked": 0 },
+        "vocab":    { "done": 0, "required": 20, "pieces_unlocked": 0 },
+        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+      }
+    },
+    "stage5": {
+      "status": "locked",
+      "cleared": false,
+      "tracks": {
+        "leetcode": { "done": 0, "required": 10, "pieces_unlocked": 0 },
+        "vocab":    { "done": 0, "required": 20, "pieces_unlocked": 0 },
+        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+      }
+    },
+    "boss": {
+      "status": "locked",
+      "cleared": false,
+      "tracks": {
+        "leetcode": { "done": 0, "required": 15, "pieces_unlocked": 0 },
+        "vocab":    { "done": 0, "required": 25, "pieces_unlocked": 0 },
+        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+      }
+    }
   },
   "weak_vocab": [],
   "activity_log": [],
   "stats": {
     "total_leetcode": 0,
     "total_vocab": 0,
+    "total_claude": 0,
     "streak_days": 0,
     "last_active": null
   }
