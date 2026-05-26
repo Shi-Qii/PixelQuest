@@ -26,13 +26,6 @@ Every task you complete reveals a piece of your chosen image. Clear all 6 stages
 Upload any image. It gets cut into 100 pieces.
 Complete tasks across all three tracks → unlock pieces → reveal your image.
 
-```
-░░░░░░░░░░    ████░░░░░░    ██████████
-░░░░░░░░░░ →  ████░░░░░░ →  ██████████
-░░░░░░░░░░    ██░░░░░░░░    ████░░░░░░
-  0%             30%            80%
-```
-
 ---
 
 ## Unlock Logic
@@ -202,7 +195,9 @@ PixelQuest/
 │   └── stages.json                # All 6 stages with 3 tracks each
 ├── progress/
 │   ├── <player>.json              # Per-player progress (all 3 tracks)
-│   └── party.json                 # Shared party + BOSS state
+│   └── party.json                 # Party member list + shared BOSS progress
+│                                  # (/party status reads all <player>.json files,
+│                                  #  party.json only stores BOSS shared state)
 ├── stages/
 │   └── stage1-array/
 │       ├── leetcode/              # Java solutions
