@@ -100,6 +100,18 @@ The level of help decreases as you progress:
 
 ## Commands
 
+### Setup
+| Command | Action |
+|---|---|
+| `/setup` | Choose or customize problems and vocabulary for the current stage |
+
+**Three modes when entering a new stage:**
+- `[1] Use defaults` — Claude's curated picks with difficulty tags, start immediately
+- `[2] Swap some` — Keep most defaults, replace specific ones by number or description (e.g. "I want sliding window instead")
+- `[3] Fully custom` — Describe a topic and Claude recommends, or name problems directly. Vocab words: you name them, Claude fills in definition + example sentence.
+
+You can re-run `/setup` anytime to adjust. Already-completed items cannot be removed, only replaced.
+
 ### Learning
 | Command | Action |
 |---|---|

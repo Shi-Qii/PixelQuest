@@ -12,13 +12,23 @@
           "theme": "Array / Two Pointer",
           "required": 5,
           "pieces": 4,
-          "sample": ["TwoSum", "BestTimeToBuyAndSellStock", "ContainsDuplicate", "MaximumSubarray", "MoveZeroes"]
+          "defaults": [
+            { "name": "TwoSum",                   "difficulty": 1, "tag": "HashMap",      "note": "最經典入門，必做" },
+            { "name": "ContainsDuplicate",         "difficulty": 1, "tag": "HashSet",      "note": "練 Set 判重" },
+            { "name": "MoveZeroes",                "difficulty": 1, "tag": "Two Pointer",  "note": "雙指針基礎" },
+            { "name": "MaximumSubarray",           "difficulty": 2, "tag": "Kadane",       "note": "子陣列最大和" },
+            { "name": "BestTimeToBuyAndSellStock", "difficulty": 2, "tag": "One Pass",     "note": "一次遍歷技巧" }
+          ]
         },
         "vocab": {
           "label": "TOEIC",
           "theme": "日常動詞、基礎形容詞",
           "required": 10,
           "pieces": 4,
+          "defaults": [
+            "obtain", "require", "ensure", "improve", "complete",
+            "available", "significant", "efficient", "accurate", "appropriate"
+          ],
           "bank": "stages/stage1-array/vocab/toeic_bank.md"
         },
         "claude": {
@@ -44,13 +54,27 @@
           "theme": "String / HashMap",
           "required": 8,
           "pieces": 6,
-          "sample": ["ValidAnagram", "LongestSubstringWithoutRepeating", "GroupAnagrams", "ValidParentheses", "LongestCommonPrefix"]
+          "defaults": [
+            { "name": "ValidAnagram",                      "difficulty": 1, "tag": "HashMap",     "note": "字元計數基礎" },
+            { "name": "LongestCommonPrefix",               "difficulty": 1, "tag": "String",      "note": "字串比對" },
+            { "name": "ValidParentheses",                  "difficulty": 1, "tag": "Stack",       "note": "括號配對，Stack 入門" },
+            { "name": "RomanToInteger",                    "difficulty": 1, "tag": "HashMap",     "note": "符號轉換邏輯" },
+            { "name": "LongestSubstringWithoutRepeating",  "difficulty": 2, "tag": "Sliding Window", "note": "滑動視窗核心題" },
+            { "name": "GroupAnagrams",                     "difficulty": 2, "tag": "HashMap",     "note": "分組技巧" },
+            { "name": "EncodeDecodeStrings",               "difficulty": 2, "tag": "Design",      "note": "編解碼設計" },
+            { "name": "MinimumWindowSubstring",            "difficulty": 3, "tag": "Sliding Window", "note": "Hard 挑戰" }
+          ]
         },
         "vocab": {
           "label": "TOEIC",
           "theme": "IT 技術、辦公室詞彙",
           "required": 15,
           "pieces": 6,
+          "defaults": [
+            "software", "database", "application", "configure", "access",
+            "document", "confirm", "priority", "department", "colleague",
+            "deadline", "urgent", "official", "proposal", "agenda"
+          ],
           "bank": "stages/stage2-string/vocab/toeic_bank.md"
         },
         "claude": {
@@ -76,13 +100,27 @@
           "theme": "Linked List / Stack",
           "required": 8,
           "pieces": 6,
-          "sample": ["ReverseLinkedList", "MergeTwoSortedLists", "LinkedListCycle", "RemoveNthNodeFromEndOfList", "PalindromeLinkedList"]
+          "defaults": [
+            { "name": "ReverseLinkedList",             "difficulty": 1, "tag": "LinkedList",  "note": "反轉，必做基礎" },
+            { "name": "MergeTwoSortedLists",           "difficulty": 1, "tag": "LinkedList",  "note": "合併排序鏈結" },
+            { "name": "PalindromeLinkedList",          "difficulty": 1, "tag": "Two Pointer", "note": "快慢指針應用" },
+            { "name": "LinkedListCycle",               "difficulty": 1, "tag": "Fast/Slow",   "note": "Floyd 判環" },
+            { "name": "RemoveNthNodeFromEndOfList",    "difficulty": 2, "tag": "Two Pointer", "note": "倒數第 N 個節點" },
+            { "name": "ReorderList",                   "difficulty": 2, "tag": "LinkedList",  "note": "綜合操作" },
+            { "name": "LRUCache",                      "difficulty": 2, "tag": "Design",      "note": "HashMap + LinkedList" },
+            { "name": "MergeKSortedLists",             "difficulty": 3, "tag": "Heap",        "note": "Hard 挑戰" }
+          ]
         },
         "vocab": {
           "label": "TOEIC",
           "theme": "商業流程、財務詞彙",
           "required": 15,
           "pieces": 6,
+          "defaults": [
+            "revenue", "expenditure", "transaction", "payment", "budget",
+            "procedure", "policy", "compliance", "strategy", "negotiate",
+            "authorize", "contract", "obligation", "settlement", "audit"
+          ],
           "bank": "stages/stage3-linkedlist/vocab/toeic_bank.md"
         },
         "claude": {
@@ -108,13 +146,30 @@
           "theme": "Binary Tree / DFS / BFS",
           "required": 10,
           "pieces": 8,
-          "sample": ["MaximumDepthOfBinaryTree", "InvertBinaryTree", "BinaryTreeLevelOrderTraversal", "ValidateBinarySearchTree", "LowestCommonAncestor"]
+          "defaults": [
+            { "name": "MaximumDepthOfBinaryTree",        "difficulty": 1, "tag": "DFS",    "note": "遞迴基礎" },
+            { "name": "InvertBinaryTree",                "difficulty": 1, "tag": "DFS",    "note": "樹的鏡像" },
+            { "name": "DiameterOfBinaryTree",            "difficulty": 1, "tag": "DFS",    "note": "最長路徑" },
+            { "name": "BalancedBinaryTree",              "difficulty": 1, "tag": "DFS",    "note": "平衡判斷" },
+            { "name": "BinaryTreeLevelOrderTraversal",   "difficulty": 2, "tag": "BFS",    "note": "層序遍歷" },
+            { "name": "ValidateBinarySearchTree",        "difficulty": 2, "tag": "DFS",    "note": "BST 驗證" },
+            { "name": "LowestCommonAncestor",            "difficulty": 2, "tag": "DFS",    "note": "最近公共祖先" },
+            { "name": "BinaryTreeRightSideView",         "difficulty": 2, "tag": "BFS",    "note": "右視圖" },
+            { "name": "PathSumII",                       "difficulty": 2, "tag": "DFS",    "note": "路徑總和" },
+            { "name": "SerializeDeserializeBinaryTree",  "difficulty": 3, "tag": "Design", "note": "Hard 挑戰" }
+          ]
         },
         "vocab": {
           "label": "TOEIC",
           "theme": "旅遊、交通、描述詞",
           "required": 20,
           "pieces": 8,
+          "defaults": [
+            "itinerary", "reservation", "accommodation", "departure", "arrival",
+            "terminal", "boarding", "customs", "transfer", "delay",
+            "facility", "venue", "accessible", "comprehensive", "reliable",
+            "flexible", "outstanding", "exceptional", "preliminary", "mandatory"
+          ],
           "bank": "stages/stage4-tree/vocab/toeic_bank.md"
         },
         "claude": {
@@ -140,13 +195,30 @@
           "theme": "Dynamic Programming",
           "required": 10,
           "pieces": 8,
-          "sample": ["ClimbingStairs", "CoinChange", "LongestIncreasingSubsequence", "HouseRobber", "UniquePaths"]
+          "defaults": [
+            { "name": "ClimbingStairs",                 "difficulty": 1, "tag": "DP",  "note": "DP 入門，從這裡開始" },
+            { "name": "HouseRobber",                    "difficulty": 1, "tag": "DP",  "note": "狀態轉移基礎" },
+            { "name": "MinCostClimbingStairs",          "difficulty": 1, "tag": "DP",  "note": "成本最小化" },
+            { "name": "UniquePaths",                    "difficulty": 2, "tag": "DP",  "note": "二維 DP 入門" },
+            { "name": "CoinChange",                     "difficulty": 2, "tag": "DP",  "note": "無限背包問題" },
+            { "name": "LongestIncreasingSubsequence",   "difficulty": 2, "tag": "DP",  "note": "LIS 經典" },
+            { "name": "WordBreak",                      "difficulty": 2, "tag": "DP",  "note": "字串 DP" },
+            { "name": "LongestCommonSubsequence",       "difficulty": 2, "tag": "DP",  "note": "二維 DP 進階" },
+            { "name": "TargetSum",                      "difficulty": 2, "tag": "DP",  "note": "0/1 背包" },
+            { "name": "BurstBalloons",                  "difficulty": 3, "tag": "DP",  "note": "Hard 挑戰，區間 DP" }
+          ]
         },
         "vocab": {
           "label": "TOEIC",
           "theme": "策略、決策、高階商業",
           "required": 20,
           "pieces": 8,
+          "defaults": [
+            "initiative", "framework", "benchmark", "forecast", "implementation",
+            "optimize", "prioritize", "facilitate", "accelerate", "sustainable",
+            "competitor", "campaign", "differentiate", "retain", "incentive",
+            "merger", "acquisition", "stakeholder", "fiscal", "deficit"
+          ],
           "bank": "stages/stage5-dp/vocab/toeic_bank.md"
         },
         "claude": {
@@ -173,13 +245,14 @@
           "theme": "Mixed Hard",
           "required": 15,
           "pieces": 8,
-          "sample": []
+          "defaults": []
         },
         "vocab": {
           "label": "TOEIC",
           "theme": "全類混測",
           "required": 25,
           "pieces": 8,
+          "defaults": [],
           "bank": "stages/boss/vocab/toeic_bank.md"
         },
         "claude": {
