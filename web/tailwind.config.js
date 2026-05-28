@@ -5,13 +5,13 @@ module.exports = {
     extend: {
       colors: {
         game: {
-          bg: '#0f0f1a',
-          card: '#1a1a2e',
-          border: '#2d2d4e',
-          accent: '#7c3aed',
-          gold: '#f59e0b',
-          green: '#10b981',
-          red: '#ef4444',
+          bg:     'rgb(var(--color-bg) / <alpha-value>)',
+          card:   'rgb(var(--color-card) / <alpha-value>)',
+          border: 'rgb(var(--color-border) / <alpha-value>)',
+          accent: 'rgb(var(--color-accent) / <alpha-value>)',
+          gold:   'rgb(var(--color-gold) / <alpha-value>)',
+          green:  'rgb(var(--color-green) / <alpha-value>)',
+          red:    'rgb(var(--color-red) / <alpha-value>)',
         },
       },
     },

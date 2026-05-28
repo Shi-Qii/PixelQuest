@@ -1,39 +1,29 @@
-import Anthropic from '@anthropic-ai/sdk'
 import { createClient } from '@supabase/supabase-js'
-
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 )
 
+// TODO: 拿到 Anthropic API Key 後，取消註解以下區塊啟用 AI 回饋
+// import Anthropic from '@anthropic-ai/sdk'
+// const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+// async function getAIFeedback(word, correctZh, userAnswer, isCorrect) {
+//   const msg = await anthropic.messages.create({
+//     model: 'claude-haiku-4-5-20251001',
+//     max_tokens: 120,
+//     messages: [{ role: 'user', content:
+//       `英文單字：${word}\n正確中文：${correctZh}\n玩家選的：${userAnswer}\n結果：${isCorrect ? '正確' : '錯誤'}\n請用一句中文給出簡短例句或記憶技巧（不超過30字）。`
+//     }],
+//   })
+//   return msg.content[0].text.trim()
+// }
+
 export async function POST(request) {
   const { word, correctZh, userAnswer, stageId } = await request.json()
 
   const isCorrect = userAnswer === correctZh
-
-  let feedback = ''
-  try {
-    const msg = await anthropic.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 120,
-      messages: [
-        {
-          role: 'user',
-          content: `英文單字：${word}
-正確中文：${correctZh}
-玩家選的：${userAnswer}
-結果：${isCorrect ? '正確' : '錯誤'}
-
-請用一句中文給出簡短例句或記憶技巧（不超過30字）。`,
-        },
-      ],
-    })
-    feedback = msg.content[0].text.trim()
-  } catch {
-    // 評分 API 失敗不影響答題結果
-  }
+  const feedback = '' // TODO: 改成 await getAIFeedback(word, correctZh, userAnswer, isCorrect)
 
   // 答錯記到 weak_vocab
   if (!isCorrect) {
