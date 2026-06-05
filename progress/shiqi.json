@@ -5,6 +5,7 @@
     0,
     1,
     2,
+    3,
     8,
     9
   ],
@@ -15,7 +16,7 @@
       "cleared": false,
       "tracks": {
         "leetcode": {
-          "done": 4,
+          "done": 5,
           "required": 5,
           "pieces_unlocked": 0,
           "setup_done": false,
@@ -211,10 +212,17 @@
       "name": "MaximumSubarray",
       "stage": "stage1",
       "pieces_after": 5
+    },
+    {
+      "date": "2026-06-05",
+      "type": "leetcode",
+      "name": "BestTimeToBuyAndSellStock",
+      "stage": "stage1",
+      "pieces_after": 6
     }
   ],
   "stats": {
-    "total_leetcode": 4,
+    "total_leetcode": 5,
     "total_vocab": 1,
     "total_claude": 2,
     "streak_days": 0,
