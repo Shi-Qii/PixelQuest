@@ -27,7 +27,7 @@
           ]
         },
         "vocab": {
-          "done": 6,
+          "done": 7,
           "required": 10,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -239,11 +239,18 @@
       "name": "ensure",
       "stage": "stage1",
       "pieces_after": 4
+    },
+    {
+      "date": "2026-06-06",
+      "type": "vocab",
+      "name": "significant",
+      "stage": "stage1",
+      "pieces_after": 4
     }
   ],
   "stats": {
     "total_leetcode": 1,
-    "total_vocab": 6,
+    "total_vocab": 7,
     "total_claude": 1,
     "streak_days": 0,
     "last_active": "2026-06-06"
