@@ -23,7 +23,7 @@
           "selected": []
         },
         "vocab": {
-          "done": 1,
+          "done": 2,
           "required": 10,
           "pieces_unlocked": 0,
           "setup_done": false,
@@ -219,11 +219,18 @@
       "name": "BestTimeToBuyAndSellStock",
       "stage": "stage1",
       "pieces_after": 6
+    },
+    {
+      "date": "2026-06-05",
+      "type": "vocab",
+      "name": "require",
+      "stage": "stage1",
+      "pieces_after": 6
     }
   ],
   "stats": {
     "total_leetcode": 5,
-    "total_vocab": 1,
+    "total_vocab": 2,
     "total_claude": 2,
     "streak_days": 0,
     "last_active": "2026-06-05"
