@@ -25,7 +25,7 @@
           ]
         },
         "vocab": {
-          "done": 1,
+          "done": 2,
           "required": 10,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -202,13 +202,20 @@
       "name": "CLAUDE.md+Skills",
       "stage": "stage1",
       "pieces_after": 2
+    },
+    {
+      "date": "2026-06-06",
+      "type": "vocab",
+      "name": "improve",
+      "stage": "stage1",
+      "pieces_after": 2
     }
   ],
   "stats": {
     "total_leetcode": 1,
-    "total_vocab": 1,
+    "total_vocab": 2,
     "total_claude": 1,
     "streak_days": 0,
-    "last_active": "2026-06-05"
+    "last_active": "2026-06-06"
   }
 }
