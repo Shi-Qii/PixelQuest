@@ -25,7 +25,7 @@
           "selected": []
         },
         "vocab": {
-          "done": 6,
+          "done": 7,
           "required": 10,
           "pieces_unlocked": 0,
           "setup_done": false,
@@ -256,11 +256,18 @@
       "name": "available",
       "stage": "stage1",
       "pieces_after": 8
+    },
+    {
+      "date": "2026-06-05",
+      "type": "vocab",
+      "name": "significant",
+      "stage": "stage1",
+      "pieces_after": 8
     }
   ],
   "stats": {
     "total_leetcode": 5,
-    "total_vocab": 6,
+    "total_vocab": 7,
     "total_claude": 2,
     "streak_days": 0,
     "last_active": "2026-06-05"
