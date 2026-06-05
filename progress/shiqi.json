@@ -16,7 +16,7 @@
           "selected": []
         },
         "vocab": {
-          "done": 0,
+          "done": 1,
           "required": 10,
           "pieces_unlocked": 0,
           "setup_done": false,
@@ -163,11 +163,18 @@
       "name": "TwoSum",
       "stage": "stage1",
       "pieces_after": 0
+    },
+    {
+      "date": "2026-06-05",
+      "type": "vocab",
+      "name": "obtain",
+      "stage": "stage1",
+      "pieces_after": 0
     }
   ],
   "stats": {
     "total_leetcode": 1,
-    "total_vocab": 0,
+    "total_vocab": 1,
     "total_claude": 0,
     "streak_days": 0,
     "last_active": "2026-06-05"
