@@ -1,6 +1,6 @@
 {
   "player": "shiqi",
-  "current_stage": "stage1",
+  "current_stage": "stage2",
   "unlocked_pieces": [
     0,
     1,
@@ -9,14 +9,15 @@
     4,
     5,
     6,
+    7,
     8,
     9
   ],
   "total_pieces": 100,
   "stages": {
     "stage1": {
-      "status": "in_progress",
-      "cleared": false,
+      "status": "cleared",
+      "cleared": true,
       "tracks": {
         "leetcode": {
           "done": 5,
@@ -26,7 +27,7 @@
           "selected": []
         },
         "vocab": {
-          "done": 9,
+          "done": 10,
           "required": 10,
           "pieces_unlocked": 0,
           "setup_done": false,
@@ -40,7 +41,7 @@
       }
     },
     "stage2": {
-      "status": "locked",
+      "status": "in_progress",
       "cleared": false,
       "tracks": {
         "leetcode": {
@@ -278,11 +279,18 @@
       "name": "accurate",
       "stage": "stage1",
       "pieces_after": 9
+    },
+    {
+      "date": "2026-06-05",
+      "type": "vocab",
+      "name": "appropriate",
+      "stage": "stage1",
+      "pieces_after": 10
     }
   ],
   "stats": {
     "total_leetcode": 5,
-    "total_vocab": 9,
+    "total_vocab": 10,
     "total_claude": 2,
     "streak_days": 0,
     "last_active": "2026-06-05"
