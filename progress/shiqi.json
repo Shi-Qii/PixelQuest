@@ -3,6 +3,7 @@
   "current_stage": "stage1",
   "unlocked_pieces": [
     0,
+    1,
     4,
     5,
     6,
@@ -17,7 +18,7 @@
       "cleared": false,
       "tracks": {
         "leetcode": {
-          "done": 2,
+          "done": 3,
           "required": 5,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -277,10 +278,17 @@
       "name": "ContainsDuplicate",
       "stage": "stage1",
       "pieces_after": 7
+    },
+    {
+      "date": "2026-06-06",
+      "type": "leetcode",
+      "name": "MoveZeroes",
+      "stage": "stage1",
+      "pieces_after": 8
     }
   ],
   "stats": {
-    "total_leetcode": 2,
+    "total_leetcode": 3,
     "total_vocab": 10,
     "total_claude": 1,
     "streak_days": 0,
