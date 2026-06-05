@@ -2,6 +2,7 @@
   "player": "shiqi",
   "current_stage": "stage1",
   "unlocked_pieces": [
+    0,
     8,
     9
   ],
@@ -12,7 +13,7 @@
       "cleared": false,
       "tracks": {
         "leetcode": {
-          "done": 1,
+          "done": 2,
           "required": 5,
           "pieces_unlocked": 0,
           "setup_done": false,
@@ -187,10 +188,17 @@
       "name": "CLAUDE.md task",
       "stage": "stage1",
       "pieces_after": 2
+    },
+    {
+      "date": "2026-06-05",
+      "type": "leetcode",
+      "name": "ContainsDuplicate",
+      "stage": "stage1",
+      "pieces_after": 3
     }
   ],
   "stats": {
-    "total_leetcode": 1,
+    "total_leetcode": 2,
     "total_vocab": 1,
     "total_claude": 2,
     "streak_days": 0,
