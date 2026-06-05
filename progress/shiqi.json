@@ -8,64 +8,168 @@
       "status": "in_progress",
       "cleared": false,
       "tracks": {
-        "leetcode": { "done": 0, "required": 5,  "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "vocab":    { "done": 0, "required": 10, "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+        "leetcode": {
+          "done": 1,
+          "required": 5,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "vocab": {
+          "done": 0,
+          "required": 10,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "claude": {
+          "done": 0,
+          "required": 1,
+          "pieces_unlocked": 0
+        }
       }
     },
     "stage2": {
       "status": "locked",
       "cleared": false,
       "tracks": {
-        "leetcode": { "done": 0, "required": 8,  "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "vocab":    { "done": 0, "required": 15, "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+        "leetcode": {
+          "done": 0,
+          "required": 8,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "vocab": {
+          "done": 0,
+          "required": 15,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "claude": {
+          "done": 0,
+          "required": 1,
+          "pieces_unlocked": 0
+        }
       }
     },
     "stage3": {
       "status": "locked",
       "cleared": false,
       "tracks": {
-        "leetcode": { "done": 0, "required": 8,  "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "vocab":    { "done": 0, "required": 15, "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+        "leetcode": {
+          "done": 0,
+          "required": 8,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "vocab": {
+          "done": 0,
+          "required": 15,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "claude": {
+          "done": 0,
+          "required": 1,
+          "pieces_unlocked": 0
+        }
       }
     },
     "stage4": {
       "status": "locked",
       "cleared": false,
       "tracks": {
-        "leetcode": { "done": 0, "required": 10, "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "vocab":    { "done": 0, "required": 20, "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+        "leetcode": {
+          "done": 0,
+          "required": 10,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "vocab": {
+          "done": 0,
+          "required": 20,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "claude": {
+          "done": 0,
+          "required": 1,
+          "pieces_unlocked": 0
+        }
       }
     },
     "stage5": {
       "status": "locked",
       "cleared": false,
       "tracks": {
-        "leetcode": { "done": 0, "required": 10, "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "vocab":    { "done": 0, "required": 20, "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+        "leetcode": {
+          "done": 0,
+          "required": 10,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "vocab": {
+          "done": 0,
+          "required": 20,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "claude": {
+          "done": 0,
+          "required": 1,
+          "pieces_unlocked": 0
+        }
       }
     },
     "boss": {
       "status": "locked",
       "cleared": false,
       "tracks": {
-        "leetcode": { "done": 0, "required": 15, "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "vocab":    { "done": 0, "required": 25, "pieces_unlocked": 0, "setup_done": false, "selected": [] },
-        "claude":   { "done": 0, "required": 1,  "pieces_unlocked": 0 }
+        "leetcode": {
+          "done": 0,
+          "required": 15,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "vocab": {
+          "done": 0,
+          "required": 25,
+          "pieces_unlocked": 0,
+          "setup_done": false,
+          "selected": []
+        },
+        "claude": {
+          "done": 0,
+          "required": 1,
+          "pieces_unlocked": 0
+        }
       }
     }
   },
   "weak_vocab": [],
-  "activity_log": [],
+  "activity_log": [
+    {
+      "date": "2026-06-05",
+      "type": "leetcode",
+      "name": "TwoSum",
+      "stage": "stage1",
+      "pieces_after": 0
+    }
+  ],
   "stats": {
-    "total_leetcode": 0,
+    "total_leetcode": 1,
     "total_vocab": 0,
     "total_claude": 0,
     "streak_days": 0,
-    "last_active": null
+    "last_active": "2026-06-05"
   }
 }

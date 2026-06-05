@@ -2,7 +2,7 @@
 
 步驟：
 1. 讀取 `progress/shiqi.json` 確認當前 stage 和進度
-2. 執行：python scripts/unlock.py <type> <name>
+2. 執行：python3 scripts/unlock.py <type> <name>
 3. 如果是 leetcode，先問玩家：
    「你的解法是什麼複雜度？有沒有更好的方式？」
    等玩家回答後，根據 hint_policy 給出適當反饋
