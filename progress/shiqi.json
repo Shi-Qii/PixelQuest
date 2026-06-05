@@ -4,6 +4,7 @@
   "unlocked_pieces": [
     0,
     1,
+    2,
     8,
     9
   ],
@@ -14,7 +15,7 @@
       "cleared": false,
       "tracks": {
         "leetcode": {
-          "done": 3,
+          "done": 4,
           "required": 5,
           "pieces_unlocked": 0,
           "setup_done": false,
@@ -203,10 +204,17 @@
       "name": "MoveZeroes",
       "stage": "stage1",
       "pieces_after": 4
+    },
+    {
+      "date": "2026-06-05",
+      "type": "leetcode",
+      "name": "MaximumSubarray",
+      "stage": "stage1",
+      "pieces_after": 5
     }
   ],
   "stats": {
-    "total_leetcode": 3,
+    "total_leetcode": 4,
     "total_vocab": 1,
     "total_claude": 2,
     "streak_days": 0,
