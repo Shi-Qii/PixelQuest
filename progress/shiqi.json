@@ -1,7 +1,10 @@
 {
   "player": "shiqi",
   "current_stage": "stage1",
-  "unlocked_pieces": [],
+  "unlocked_pieces": [
+    8,
+    9
+  ],
   "total_pieces": 100,
   "stages": {
     "stage1": {
@@ -40,7 +43,7 @@
           ]
         },
         "claude": {
-          "done": 0,
+          "done": 1,
           "required": 1,
           "pieces_unlocked": 0
         }
@@ -192,12 +195,19 @@
       "name": "obtain",
       "stage": "stage1",
       "pieces_after": 0
+    },
+    {
+      "date": "2026-06-05",
+      "type": "claude",
+      "name": "CLAUDE.md+Skills",
+      "stage": "stage1",
+      "pieces_after": 2
     }
   ],
   "stats": {
     "total_leetcode": 1,
     "total_vocab": 1,
-    "total_claude": 0,
+    "total_claude": 1,
     "streak_days": 0,
     "last_active": "2026-06-05"
   }
