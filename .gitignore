@@ -1,0 +1,6 @@
+web/node_modules/
+web/.next/
+web/.env.local
+__pycache__/
+*.pyc
+.DS_Store
