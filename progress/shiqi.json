@@ -12,6 +12,7 @@
     7,
     8,
     9,
+    10,
     16,
     17,
     18,
@@ -68,7 +69,7 @@
       "cleared": false,
       "tracks": {
         "leetcode": {
-          "done": 1,
+          "done": 2,
           "required": 8,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -445,10 +446,17 @@
       "name": "ValidAnagram",
       "stage": "stage2",
       "pieces_after": 16
+    },
+    {
+      "date": "2026-06-06",
+      "type": "leetcode",
+      "name": "LongestCommonPrefix",
+      "stage": "stage2",
+      "pieces_after": 17
     }
   ],
   "stats": {
-    "total_leetcode": 6,
+    "total_leetcode": 7,
     "total_vocab": 25,
     "total_claude": 1,
     "streak_days": 0,
