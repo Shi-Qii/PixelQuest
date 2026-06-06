@@ -16,6 +16,7 @@
     11,
     12,
     13,
+    14,
     16,
     17,
     18,
@@ -72,7 +73,7 @@
       "cleared": false,
       "tracks": {
         "leetcode": {
-          "done": 6,
+          "done": 7,
           "required": 8,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -484,10 +485,17 @@
       "name": "GroupAnagrams",
       "stage": "stage2",
       "pieces_after": 20
+    },
+    {
+      "date": "2026-06-06",
+      "type": "leetcode",
+      "name": "EncodeDecodeStrings",
+      "stage": "stage2",
+      "pieces_after": 21
     }
   ],
   "stats": {
-    "total_leetcode": 11,
+    "total_leetcode": 12,
     "total_vocab": 25,
     "total_claude": 1,
     "streak_days": 0,
