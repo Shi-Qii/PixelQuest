@@ -15,6 +15,7 @@
     10,
     11,
     12,
+    13,
     16,
     17,
     18,
@@ -71,7 +72,7 @@
       "cleared": false,
       "tracks": {
         "leetcode": {
-          "done": 5,
+          "done": 6,
           "required": 8,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -476,10 +477,17 @@
       "name": "LongestSubstringWithoutRepeating",
       "stage": "stage2",
       "pieces_after": 19
+    },
+    {
+      "date": "2026-06-06",
+      "type": "leetcode",
+      "name": "GroupAnagrams",
+      "stage": "stage2",
+      "pieces_after": 20
     }
   ],
   "stats": {
-    "total_leetcode": 10,
+    "total_leetcode": 11,
     "total_vocab": 25,
     "total_claude": 1,
     "streak_days": 0,
