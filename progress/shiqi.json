@@ -65,15 +65,40 @@
           "done": 0,
           "required": 8,
           "pieces_unlocked": 0,
-          "setup_done": false,
-          "selected": []
+          "setup_done": true,
+          "selected": [
+            "ValidAnagram",
+            "LongestCommonPrefix",
+            "ValidParentheses",
+            "RomanToInteger",
+            "LongestSubstringWithoutRepeating",
+            "GroupAnagrams",
+            "EncodeDecodeStrings",
+            "MinimumWindowSubstring"
+          ]
         },
         "vocab": {
-          "done": 0,
+          "done": 1,
           "required": 15,
           "pieces_unlocked": 0,
-          "setup_done": false,
-          "selected": []
+          "setup_done": true,
+          "selected": [
+            "software",
+            "database",
+            "application",
+            "configure",
+            "access",
+            "document",
+            "confirm",
+            "priority",
+            "department",
+            "colleague",
+            "deadline",
+            "urgent",
+            "official",
+            "proposal",
+            "agenda"
+          ]
         },
         "claude": {
           "done": 0,
@@ -184,10 +209,11 @@
     }
   },
   "weak_vocab": [
-    "ensure",
-    "accurate",
-    "significant",
-    "require"
+    "configure",
+    "agenda",
+    "proposal",
+    "application",
+    "official"
   ],
   "activity_log": [
     {
@@ -301,11 +327,18 @@
       "name": "BestTimeToBuyAndSellStock",
       "stage": "stage1",
       "pieces_after": 10
+    },
+    {
+      "date": "2026-06-06",
+      "type": "vocab",
+      "name": "configure",
+      "stage": "stage2",
+      "pieces_after": 10
     }
   ],
   "stats": {
     "total_leetcode": 5,
-    "total_vocab": 10,
+    "total_vocab": 11,
     "total_claude": 1,
     "streak_days": 0,
     "last_active": "2026-06-06"
