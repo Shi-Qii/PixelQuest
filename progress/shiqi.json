@@ -82,7 +82,7 @@
           ]
         },
         "vocab": {
-          "done": 10,
+          "done": 11,
           "required": 15,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -401,11 +401,18 @@
       "name": "confirm",
       "stage": "stage2",
       "pieces_after": 14
+    },
+    {
+      "date": "2026-06-06",
+      "type": "vocab",
+      "name": "priority",
+      "stage": "stage2",
+      "pieces_after": 14
     }
   ],
   "stats": {
     "total_leetcode": 5,
-    "total_vocab": 20,
+    "total_vocab": 21,
     "total_claude": 1,
     "streak_days": 0,
     "last_active": "2026-06-06"
