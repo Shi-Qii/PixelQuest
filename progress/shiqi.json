@@ -11,7 +11,8 @@
     6,
     7,
     8,
-    9
+    9,
+    16
   ],
   "total_pieces": 100,
   "stages": {
@@ -78,7 +79,7 @@
           ]
         },
         "vocab": {
-          "done": 2,
+          "done": 3,
           "required": 15,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -341,11 +342,18 @@
       "name": "agenda",
       "stage": "stage2",
       "pieces_after": 10
+    },
+    {
+      "date": "2026-06-06",
+      "type": "vocab",
+      "name": "proposal",
+      "stage": "stage2",
+      "pieces_after": 11
     }
   ],
   "stats": {
     "total_leetcode": 5,
-    "total_vocab": 12,
+    "total_vocab": 13,
     "total_claude": 1,
     "streak_days": 0,
     "last_active": "2026-06-06"
