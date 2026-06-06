@@ -14,6 +14,7 @@
     9,
     10,
     11,
+    12,
     16,
     17,
     18,
@@ -70,7 +71,7 @@
       "cleared": false,
       "tracks": {
         "leetcode": {
-          "done": 3,
+          "done": 4,
           "required": 8,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -461,10 +462,17 @@
       "name": "ValidParentheses",
       "stage": "stage2",
       "pieces_after": 18
+    },
+    {
+      "date": "2026-06-06",
+      "type": "leetcode",
+      "name": "RomanToInteger",
+      "stage": "stage2",
+      "pieces_after": 19
     }
   ],
   "stats": {
-    "total_leetcode": 8,
+    "total_leetcode": 9,
     "total_vocab": 25,
     "total_claude": 1,
     "streak_days": 0,
