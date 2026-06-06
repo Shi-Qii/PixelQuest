@@ -15,7 +15,8 @@
     16,
     17,
     18,
-    19
+    19,
+    20
   ],
   "total_pieces": 100,
   "stages": {
@@ -82,7 +83,7 @@
           ]
         },
         "vocab": {
-          "done": 12,
+          "done": 13,
           "required": 15,
           "pieces_unlocked": 0,
           "setup_done": true,
@@ -415,11 +416,18 @@
       "name": "department",
       "stage": "stage2",
       "pieces_after": 14
+    },
+    {
+      "date": "2026-06-06",
+      "type": "vocab",
+      "name": "colleague",
+      "stage": "stage2",
+      "pieces_after": 15
     }
   ],
   "stats": {
     "total_leetcode": 5,
-    "total_vocab": 22,
+    "total_vocab": 23,
     "total_claude": 1,
     "streak_days": 0,
     "last_active": "2026-06-06"
